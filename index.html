@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title> </title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='Title' content=''>
+    <meta name='Subject' content=''>
+    <meta name='Keywords' content=''>
+    <meta name='Author' content=''>
+    <meta name='Publisher' content=''>
+    <meta name='Description' content=''>
+    <meta name='Author-Date' content=''>
+    <meta name='Copyright' content=''>
+
+    <!-- 접근성 텍스트(skip) 숨김 -->
+    <style>
+        #skip {
+            overflow: hidden;
+            position: absolute;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            text-indent: -9999px;
+        }
+    </style>
+
+    <!-- 폰트어썸 -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel='stylesheet'
+        href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+
+    <!-- CSS 리셋 -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+    <!-- 제이쿼리 3.7 CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+
+    <!-- 로컬 CSS -->
+    <link rel='stylesheet' href='./css/style.css' />
+
+    <!-- 로컬 js -->
+    <script src='./js/script.js' defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- 시각장애인 웹 접근성을 위한 skip _ 지우지않아도 됩니다. -->
+
+    <ul id='skip'>
+        <li><a href='#header'>헤더 바로가기</a></li>
+        <li><a href='#nav'>메뉴 바로가기</a></li>
+        <li><a href='#content'>내용 바로가기</a></li>
+    </ul>
+
+    <!-- 공백을 위한 공간입니다. -->
+    <div id="wrap">
+        <header id="header">
+            <div class="headerTopNav">
+                <div class="container">
+                    <div class="headerTopLeftNav">
+                        <a href="#">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 30 30" fill="currentColor">
+                                <circle cx="13" cy="13" r="8" stroke="currentColor" stroke-width="2" fill="none" />
+                                <line x1="18" y1="18" x2="28" y2="28" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                            <i>무엇을 찾고 계십니까?</i>
+                        </a>
+                    </div>
+
+                    <div class="headerTopCenterLogo">
+                        <h1 class="logo-text"><a href="#">HERA</a></h1>
+                    </div>
+
+                    <div class="headerTopRightNav">
+                        <a href="#"><i class="fas fa-map-marker-alt" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <!-- 햄버거 메뉴 -->
+                <div class="searchBox">
+                    <a href="#" class="menu mobile">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </a>
+                </div>
+
+            </div>
+
+
+            <nav id="gnb" class="gnb">
+                <div class="headerBottomNav">
+                    <ul class="gnb-menu">
+
+                        <li><a href="#">헤라 스토리</a>
+                            <div class="gnb-draw">
+                                <ul class="gnb-sub-menu">
+                                    <li><a href="#" class="gnb-d2">브랜드 소개</a></li>
+                                    <li><a href="#" class="gnb-d2">헤라 크루</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">A크루</a></li>
+                                            <li><a href="#" class="gnb-d3">C크루</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="gnb-d2">캠페인 라이브러리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#">메이크업</a>
+                            <div class="gnb-draw makeup-draw">
+                                <div class="gnb-main-link">
+                                    <a href="#">메이크업 메인 &gt;</a>
+                                </div>
+                                <div class="gnb-sub-grid">
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">페이스</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">파운데이션</a></li>
+                                            <li><a href="#" class="gnb-d3">쿠션</a></li>
+                                            <li><a href="#" class="gnb-d3">베이스/프라이머</a></li>
+                                            <li><a href="#" class="gnb-d3">파우더/픽서</a></li>
+                                            <li><a href="#" class="gnb-d3">블러셔/하이라이터</a></li>
+                                            <li><a href="#" class="gnb-d3">컨실러</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">립</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">립스틱</a></li>
+                                            <li><a href="#" class="gnb-d3">틴트</a></li>
+                                            <li><a href="#" class="gnb-d3">립 밤/글로스</a></li>
+                                            <li><a href="#" class="gnb-d3">립앤치크</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">아이</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">아이섀도</a></li>
+                                            <li><a href="#" class="gnb-d3">마스카라</a></li>
+                                            <li><a href="#" class="gnb-d3">아이브로우</a></li>
+                                            <li><a href="#" class="gnb-d3">아이라이너</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-img-col">
+                                        <img src="./img/20240108_final_KR-ROUGE-CLASSY-SEOUL-RED_gnb-banner.jpg"
+                                            alt="배너 이미지 1">
+                                        <p>ROUGE CLASSY</p>
+                                        <img src="./img/240321_final_NewBlackCusion_GNB_banner_mo.jpg" alt="배너 이미지 2">
+                                        <p>BLACK CUSHION FOUNDATION</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#">스킨케어</a>
+                            <div class="gnb-draw skincare-draw">
+                                <div class="gnb-main-link">
+                                    <a href="#">스킨케어 메인 &gt;</a>
+                                </div>
+                                <div class="gnb-sub-grid">
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">제품 라인</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">클렌징</a></li>
+                                            <li><a href="#" class="gnb-d3">시그니아</a></li>
+                                            <li><a href="#" class="gnb-d3">에이지 어웨이</a></li>
+                                            <li><a href="#" class="gnb-d3">하이드로 리플렉팅</a></li>
+                                            <li><a href="#" class="gnb-d3">하이드로-듀 플럼핑</a></li>
+                                            <li><a href="#" class="gnb-d3">옴므</a></li>
+                                            <li><a href="#" class="gnb-d3">UV프로텍터</a></li>
+                                            <li><a href="#" class="gnb-d3">컴피</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">피부 고민</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">수분/보습</a></li>
+                                            <li><a href="#" class="gnb-d3">브라이트닝</a></li>
+                                            <li><a href="#" class="gnb-d3">피부보호/차단</a></li>
+                                            <li><a href="#" class="gnb-d3">안티에이징</a></li>
+                                            <li><a href="#" class="gnb-d3">프리미엄 안티에이징</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">제품 유형</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">클렌저</a></li>
+                                            <li><a href="#" class="gnb-d3">코너/워터</a></li>
+                                            <li><a href="#" class="gnb-d3">에멀젼</a></li>
+                                            <li><a href="#" class="gnb-d3">세럼/앰플</a></li>
+                                            <li><a href="#" class="gnb-d3">아이 케어</a></li>
+                                            <li><a href="#" class="gnb-d3">크림</a></li>
+                                            <li><a href="#" class="gnb-d3">UV프로텍션</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-img-col">
+                                        <img src="./img/241230_final_KR_Signia_Illuminatingserum_SKINCARE_GNB_Banner_.jpg"
+                                            alt="배너 이미지 1">
+                                        <p>SIGNIA ILLUMINATING SERUM</p>
+                                        <img src="./img/240329_final_KR_comfy_serum_mist_gnb_skincare_banner_1.jpg"
+                                            alt="배너 이미지 2">
+                                        <p>COMFY REVITALIZING SERUM MIST</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#">프래그런스</a>
+                            <div class="gnb-draw fragrance-draw">
+                                <div class="gnb-main-link">
+                                    <a href="#">프래그런스 메인 &gt;</a>
+                                </div>
+                                <div class="gnb-sub-grid">
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">제품 라인</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">지일</a></li>
+                                            <li><a href="#" class="gnb-d3">벨벳 나이트</a></li>
+                                            <li><a href="#" class="gnb-d3">페르소프</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-col">
+                                        <a href="#" class="gnb-d2">제품 유형</a>
+                                        <ul class="d3">
+                                            <li><a href="#" class="gnb-d3">제품 전체</a></li>
+                                            <li><a href="#" class="gnb-d3">향수</a></li>
+                                            <li><a href="#" class="gnb-d3">바디</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-img-col">
+                                        <img src="./img/240308_final_KR_zeal_gnb_banner.jpg" alt="배너 이미지 1">
+                                        <p>ZEAL EAU DE PARFUM FOR WOMEN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">#HERA</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content">
+            <section class="section01">
+                <div class="swiper HeraSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cont_text">
+                                <p>NEW 센슈얼 틴티드 샤인 스틱</p>
+                                <b>
+                                    맑고 선명한 첫 컬러 그대로,<br>
+                                    고지속 샤인 립스틱
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text1">
+                                <p>헤라 2025 스프링 컬렉션</p>
+                                <b>
+                                    VIBRANT BLOSSOM LOOK
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text2">
+                                <p>NEW 시그니아 일루미네이팅 세럼</p>
+                                <b>
+                                    피부 속 맑고 풍성한 빛을<br>
+                                    깨우는 광채탄력세럼
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="cont_text3">
+                                <p>NEW 리플렉션 스킨 글로우 쿠션</p>
+                                <b>
+                                    속부터 투명하게 차올라<br>
+                                    유연하게 빛나는 피부
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text4">
+                                <p>NEW 센슈얼 누드 밤</p>
+                                <b>
+                                    풍부한 세라마이드로<br>
+                                    30시간 촉촉한 생기립밤
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text5">
+                                <p>NEW 시그니아 일루미네이팅 세럼</p>
+                                <b>
+                                    피부 속 맑고 풍성한 빛을<br>
+                                    깨우는 광채탄력세럼
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text6">
+                                <p>NEW 헤라 하이드레이팅 래디언스 프라이머</p>
+                                <b>
+                                    즉각적인 관채 톤업과<br>
+                                    수분 코딩한 듯 매끈한 피부
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cont_text7">
+                                <p>NEW 헤라 에어리 파우더 프라이머</p>
+                                <b>
+                                    확실한 모공 커버 효과의<br>
+                                    혁신 프라이머
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-controls">
+                        <button class="swiper_pauseBtn" id="pauseBtn"></button>
+                        <button class="swiper_playBtn" id="playBtn" style="display: none;"></button>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section02">
+                <div class="section_header">
+                    <h2 class="section_title">
+                        BEST SELLER
+                    </h2>
+                </div>
+                <div class="section_bottom">
+                    <div class="renew2024_tab">
+                        <a href="#" class="active">ALL</a>
+                        <a href="#">MAKEUP</a>
+                        <a href="#">SKINCARE</a>
+                    </div>
+                    <ul class="product_list">
+                        <li>
+                            <div class="product_item">
+                                <img class="product_img" src="img/product01.png" alt="블랙 쿠션">
+                                <img src="./img/num1.svg" alt="숫자1" class="number-badge">
+                            </div>
+                            <a href="#">블랙 쿠션 파운데이션 SPF34/PA++</a>
+                        </li>
+                        <li>
+                            <div class="product_item">
+                                <img class="product_img" src="img/product02.png" alt="글로우 쿠션">
+                                <img src="./img/num2.svg" alt="숫자1" class="number-badge">
+                            </div>
+                            <a href="#">리플렉션 글로우 쿠션 파운데이션</a>
+                        </li>
+                        <li>
+                            <div class="product_item">
+                                <img class="product_img" src="img/product03.png" alt="누드 글로스">
+                                <img src="./img/num3.svg" alt="숫자1" class="number-badge">
+                            </div>
+                            <a href="#">센슈얼 누드 글로스</a>
+                        </li>
+                        <li>
+                            <div class="product_item">
+                                <img class="product_img" src="img/product04.png" alt="누드 밤">
+                                <img src="./img/num4.svg" alt="숫자1" class="number-badge">
+                            </div>
+                            <a href="#">센슈얼 누드 밤</a>
+                        </li>
+                    </ul>
+                    <ul class="product_list">
+                        <!-- 자바스크립트로 동적으로 내용 추가할 거임 -->
+                    </ul>
+
+
+                </div>
+            </section>
+            <section class="section03">
+                <div class="campaign">
+                    <ul>
+                        <li>
+                            <a href="https://www.hera.com/kr/ko/products/makeup/face/face.html">
+                                <div class="campaign_img campaign_img1">
+                                    <img src="./img/campaign01.jpg" alt="campaign01">
+                                </div>
+                                <div class="campaign_txt">
+                                    <h2 class="campaign_title">
+                                        FACE
+                                    </h2>
+                                    <span class="campaign_link">
+                                        페이스 제품 전체 보기
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.hera.com/kr/ko/products/makeup/lip/lip.html">
+                                <div class="campaign_img campaign_img2">
+                                    <img src="./img/campaign02.jpg" alt="campaign01">
+                                </div>
+                                <div class="campaign_txt">
+                                    <h2 class="campaign_title">
+                                        LIP
+                                    </h2>
+                                    <span class="campaign_link">
+                                        립 제품 전체보기
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.hera.com/kr/ko/products/skincare/skincare.html">
+                                <div class="campaign_img campaign_img3">
+                                    <img src="./img/campaign03.jpg" alt="campaign01">
+                                </div>
+                                <div class="campaign_txt txtRight">
+                                    <h2 class="campaign_title">
+                                        SKIN CARE
+                                    </h2>
+                                    <span class="campaign_link">
+                                        스킨케어 제품 전체보기
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section04">
+                <h2 class="section04_title">@HERABEAUTY_OFFICIAL</h2>
+
+                <section class="customSwiperSection">
+                    <div class="swiper customSwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- 슬라이드 1 -->
+                            <div class="swiper-slide">
+                                <div class="slide-wrapper">
+                                    <div class="big-image">
+                                        <img src="./img/big1.jpg" alt="메인 이미지">
+
+                                    </div>
+                                    <div class="small-images">
+                                        <img src="./img/small1.jpg" alt="작은 이미지 1">
+                                        <img src="./img/small2.jpg" alt="작은 이미지 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 슬라이드 2 -->
+                            <div class="swiper-slide">
+                                <div class="slide-wrapper">
+                                    <div class="big-image">
+                                        <img src="./img/big2.jpg" alt="메인 이미지">
+                                    </div>
+                                    <div class="small-images">
+                                        <img src="./img/small3.jpg" alt="작은 이미지 1">
+                                        <img src="./img/small4.jpg" alt="작은 이미지 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 슬라이드 3 -->
+                            <div class="swiper-slide">
+                                <div class="slide-wrapper">
+                                    <div class="big-image">
+                                        <img src="./img/big3.jpg" alt="메인 이미지">
+                                    </div>
+                                    <div class="small-images">
+                                        <img src="./img/small5.jpg" alt="작은 이미지 1">
+                                        <img src="./img/small6.jpg" alt="작은 이미지 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 슬라이드 4 -->
+                            <div class="swiper-slide">
+                                <div class="slide-wrapper one-column">
+                                    <div class="big-image big-image1">
+                                        <img src="./img/big4.jpg" alt="메인 이미지">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 네비 버튼 -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+
+                <div class="section04_link">
+                    <a href="https://www.hera.com/kr/ko/hashtag-hera/hera/hashtag-hera.html">more</a>
+                </div>
+            </section>
+            <section class="section05">
+                <a href="https://www.hera.com/kr/ko/products/makeup/face/face.html" class="section05_link_wrap">
+                    <div class="section05_img">
+                        <img src="./img/section05.jpg" alt="section05">
+                        <div class="section05_txt">
+                            <h2 class="section05_title">BRAND STORY</h2>
+                            <span class="section05_link">자세히보기</span>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="sns">
+                <a href=""><img src="./img/sns_instagram_renew.png" alt="instagram"></a>
+                <a href=""><img src="./img/sns_tiktok_renew_kr_240626.png" alt="tiktok"></a>
+                <a href=""><img src="./img/sns_youtube_renew.png" alt="youtube"></a>
+                <a href=""><img src="./img/sns_kakao_renew.png" alt="kakao"></a>
+                <a href=""><img src="./img/sns_facebook_renew.png" alt="facebook"></a>
+            </div>
+            <button class="toggleOpen">
+                <div class="copyright">
+                    <p>
+                        <span>&copy;</span>
+                        <strong>AMOREPACIFIC CORPORATION.ALL rights reserved.</strong>
+                    </p>
+                </div>
+                <div class="toggleBtn">
+                    <span class="toggleBtnOpen">
+
+                    </span>
+                </div>
+                <div class="more_footer">
+                    <div class="footer_inner">
+                        <ul>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">영상정보처리방침</a></li>
+                            <li><a href="#">뷰티포인트</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_info">
+                        <p>
+                            고객상담팀 (수신자요금부담) 080-023-5454 <br>
+                            (상담시간 월~금 : AM 09:00 ~ PM 06:00)
+                        </p>
+                        <a href="#"><img src="./img/footer-logo.png" alt="한국장애인단체총연합회"></a>
+                    </div>
+                </div>
+                <div class="footer_dropdown">
+                    <button class="dropdown_selector">
+                        <span>한국/한국어</span>
+                    </button>
+                    <ul class="dropdown_option">
+                        <li><a href="#">한국/한국어</a></li>
+                        <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
+                        <li><a href="#">日本/日本語</a></li>
+                        <li><a href="#">ประเทศไทย/ไทย</a></li>
+                    </ul>
+                </div>
+            </button>
+        </footer>
+</body>
+
+</html>

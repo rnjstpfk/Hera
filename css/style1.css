@@ -1,0 +1,98 @@
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* 헤더 */
+.topbar {
+  background: #000;
+  padding: 10px;
+  text-align: right;
+}
+
+.topbar input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+}
+
+/* 네비게이션 */
+.main-nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px 30px;
+}
+
+.main-nav h1 {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav ul li {
+  cursor: pointer;
+}
+
+/* 메인 슬라이드 */
+.main-slide {
+  position: relative;
+  height: 100vh;
+  background: #f5f3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.slide-text {
+  max-width: 40%;
+}
+
+.slide-text small {
+  font-size: 14px;
+  color: #555;
+}
+
+.slide-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.swiper-slide img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Swiper 버튼 커스텀 */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+}
+
+.swiper-pagination-bullet {
+  background: #000 !important;
+}
