@@ -91,52 +91,52 @@ $(function () {
 
 
 
-  
-$('.renew2024_tab a').click(function (e) {
-  e.preventDefault();
 
-  // 탭 스타일 적용
-  $('.renew2024_tab a').removeClass('active');
-  $(this).addClass('active');
+  $('.renew2024_tab a').click(function (e) {
+    e.preventDefault();
 
-  const tab = $(this).text().toLowerCase(); // 텍스트를 소문자로 비교: all, makeup, skincare
+    // 탭 스타일 적용
+    $('.renew2024_tab a').removeClass('active');
+    $(this).addClass('active');
 
-  // 이미지와 텍스트 변경
-  if (tab === 'skincare') {
-    const skincareData = [
-      {
-        img: 'img/skincare01.png',
-        text: '클렌징 폼 퓨어네스',
-        num: './img/num1.svg'
-      },
-      {
-        img: 'img/skincare02.png',
-        text: '에센스 스킨 부스터',
-        num: './img/num2.svg'
-      },
-      {
-        img: 'img/skincare03.png',
-        text: '리프팅 세럼 엘릭서',
-        num: './img/num3.svg'
-      },
-      {
-        img: 'img/skincare04.png',
-        text: '수분 크림 아쿠아밤',
-        num: './img/num4.svg'
-      }
-    ];
+    const tab = $(this).text().toLowerCase(); // 텍스트를 소문자로 비교: all, makeup, skincare
 
-    $('.product_list li').each(function (i) {
-      $(this).find('.product_img').attr('src', skincareData[i].img);
-      $(this).find('.number-badge').attr('src', skincareData[i].num);
-      $(this).find('a').last().text(skincareData[i].text);
-    });
+    // 이미지와 텍스트 변경
+    if (tab === 'skincare') {
+      const skincareData = [
+        {
+          img: 'img/skincare01.png',
+          text: '클렌징 폼 퓨어네스',
+          num: './img/num1.svg'
+        },
+        {
+          img: 'img/skincare02.png',
+          text: '에센스 스킨 부스터',
+          num: './img/num2.svg'
+        },
+        {
+          img: 'img/skincare03.png',
+          text: '리프팅 세럼 엘릭서',
+          num: './img/num3.svg'
+        },
+        {
+          img: 'img/skincare04.png',
+          text: '수분 크림 아쿠아밤',
+          num: './img/num4.svg'
+        }
+      ];
 
-  } else if (tab === 'all') {
-    // 다시 원래 이미지로 돌아오게 할 수도 있어
-    location.reload(); // 페이지 새로고침으로 복원
-  }
-});
+      $('.product_list li').each(function (i) {
+        $(this).find('.product_img').attr('src', skincareData[i].img);
+        $(this).find('.number-badge').attr('src', skincareData[i].num);
+        $(this).find('a').last().text(skincareData[i].text);
+      });
+
+    } else if (tab === 'all') {
+      // 다시 원래 이미지로 돌아오게 할 수도 있어
+      location.reload(); // 페이지 새로고침으로 복원
+    }
+  });
 
 
 
@@ -151,6 +151,16 @@ $('.renew2024_tab a').click(function (e) {
       prevEl: ".swiper-button-prev",
     },
     /* loop: true, */
+  });
+
+
+
+
+
+  //토글
+  $('.familysite .btn').click(function () {
+    $(this).toggleClass('on');
+    $('.sitebox').toggleClass('on');
   });
 
 

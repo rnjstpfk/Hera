@@ -96,8 +96,9 @@
             </div>
 
 
-            <nav id="gnb" class="gnb">
-                <div class="headerBottomNav">
+            <div class="headerBottomNav">
+                <nav id="gnb" class="gnb">
+
                     <ul class="gnb-menu">
 
                         <li><a href="#">헤라 스토리</a>
@@ -257,8 +258,8 @@
                         <li><a href="#">#HERA</a></li>
 
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
         <div id="content">
@@ -537,13 +538,8 @@
                 <a href=""><img src="./img/sns_kakao_renew.png" alt="kakao"></a>
                 <a href=""><img src="./img/sns_facebook_renew.png" alt="facebook"></a>
             </div>
-            <button class="toggleOpen">
-                <div class="copyright">
-                    <p>
-                        <span>&copy;</span>
-                        <strong>AMOREPACIFIC CORPORATION.ALL rights reserved.</strong>
-                    </p>
-                </div>
+            <div class="toggleOpen">
+
                 <div class="toggleBtn">
                     <span class="toggleBtnOpen">
 
@@ -557,28 +553,48 @@
                             <li><a href="#">영상정보처리방침</a></li>
                             <li><a href="#">뷰티포인트</a></li>
                             <li><a href="#">사이트맵</a></li>
+                            <div class="footer_dropdown">
+                                <input type="text" placeholder="LANGUAE 한국/한국어">
+                                <span class="btn"></span>
+                                <div class="sitebox">
+                                    <ul>
+                                        <li><a href="#">한국/한국어</a></li>
+                                        <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
+                                        <li><a href="#">日本/日本語</a></li>
+                                        <li><a href="#">ประเทศไทย/ไทย</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </ul>
                     </div>
+                    <!-- <div class="footer_dropdown">
+                        <button class="dropdown_selector">
+                            <span>한국/한국어</span><img src="./img/icon_arrow_down.svg" alt="">
+                        </button>
+                        <ul class="dropdown_option">
+                            <li><a href="#">한국/한국어</a></li>
+                            <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
+                            <li><a href="#">日本/日本語</a></li>
+                            <li><a href="#">ประเทศไทย/ไทย</a></li>
+                        </ul>
+                    </div> -->
                     <div class="footer_info">
                         <p>
                             고객상담팀 (수신자요금부담) 080-023-5454 <br>
                             (상담시간 월~금 : AM 09:00 ~ PM 06:00)
                         </p>
+
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            <span>&copy;</span>
+                            <strong>AMOREPACIFIC CORPORATION.ALL rights reserved.</strong>
+                        </p>
                         <a href="#"><img src="./img/footer-logo.png" alt="한국장애인단체총연합회"></a>
                     </div>
                 </div>
-                <div class="footer_dropdown">
-                    <button class="dropdown_selector">
-                        <span>한국/한국어</span>
-                    </button>
-                    <ul class="dropdown_option">
-                        <li><a href="#">한국/한국어</a></li>
-                        <li><a href="#">INTERNATIONAL/ENGLISH</a></li>
-                        <li><a href="#">日本/日本語</a></li>
-                        <li><a href="#">ประเทศไทย/ไทย</a></li>
-                    </ul>
-                </div>
-            </button>
+
+            </div>
         </footer>
 </body>
 
