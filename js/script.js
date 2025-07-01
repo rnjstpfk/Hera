@@ -158,12 +158,18 @@ $(function () {
 
 
   //토글
-  $('.familysite .btn').click(function () {
-    $(this).toggleClass('on');
-    $('.sitebox').toggleClass('on');
-  });
+  $('.footer_dropdown .btn').click(function() {
+  $(this).toggleClass('on');
+  $(this).siblings('.sitebox').toggleClass('on');
+});
 
 
 
+
+[...document.querySelectorAll('*')].forEach(el => {
+  if (el.scrollWidth > document.documentElement.clientWidth) {
+    console.log('넘침 👉', el);
+  }
+});
 
 });

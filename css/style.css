@@ -126,9 +126,11 @@ header {
 
 .gnb-menu {
   display: none;
-  width: 494px;
+  width: 500px;
   height: 40px;
 }
+.gnb-menu li{margin-right: 35px;}
+.gnb-menu > li > a{color: #fff;}
 
 .headerBottomNav {
   height: 150px;
@@ -147,7 +149,7 @@ header {
 .headerBottomNav>ul>li>a {
   display: block;
   width: 120px;
-  color: #fff;
+  color: #000000;
 }
 
 .headerBottomNav>ul>li>a>ul {}
@@ -262,6 +264,7 @@ header {
 .searchBox .mobile {
   display: none;
 }
+.mobile-nav > ul > li{display: none;}
 
 /* 메이크업 메뉴 */
 /* .makeup-draw {
@@ -980,6 +983,7 @@ footer.footer {
 .footer_dropdown {
   position: relative;
   top: -9px;
+  width: 180px;
 }
 
 .footer_dropdown input {
@@ -1022,6 +1026,18 @@ footer.footer {
 .footer_dropdown .sitebox.on {
   display: block;
 }
+
+.sitebox {
+  display: none;
+}
+.sitebox.on {
+  display: block;
+  position: absolute; /* 드롭다운이면 위치 조절 */
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+
 
 
 
@@ -1135,8 +1151,7 @@ footer.footer {
 
 
 @media screen and (max-width:1280px) {
-
-
+  .headerTopNav{border: none; height: 108px;}
 
   .headerTopCenterLogo {
     display: flex;
@@ -1148,6 +1163,7 @@ footer.footer {
   }
 
   .logo-text>a {
+    text-align: center;
     position: static;
     /* absolute 제거 */
     font-size: 28px;
@@ -1162,8 +1178,9 @@ footer.footer {
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 20px;
+    top: 37px;
     right: 57px;
+
   }
 
   .headerTopLeftNav i {
@@ -1418,7 +1435,7 @@ footer.footer {
   .section04_link {
     position: absolute;
     bottom: 9%;
-    left: -15%;
+    left: -33%;
   }
 
   .section04_link a {
@@ -1431,6 +1448,14 @@ footer.footer {
 
 
 }
+
+@media screen and (min-width: 1281px) {
+  .gnb-menu {
+    display: flex !important;
+  }
+}
+
+
 
 
 
@@ -1539,6 +1564,7 @@ footer.footer {
 
 
   /* more버튼 */
+  .section04{height: 800px;}
   .section04_link {
     position: absolute;
     bottom: 9%;
@@ -1550,8 +1576,13 @@ footer.footer {
     font-weight: 900;
     color: #fff;
     background-color: #000;
-    padding: 22px 650px;
+    padding: 22px 582px;
   }
+
+
+
+
+  .slide-wrapper{width: 100%; height: 80%;}
 
 
 
@@ -1578,7 +1609,7 @@ footer.footer {
   .section05_txt {
     top: 80%;
     /* 중앙 세로 정렬 */
-    left: 30%;
+    left: 40%;
     /* 중앙 가로 정렬 */
     transform: translate(-50%, -50%);
   }
@@ -1599,4 +1630,26 @@ footer.footer {
   }
 
 
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+  .section04{height: 1000px;}
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+  .section04_link {
+    position: absolute;
+    bottom: 9%;
+    left: -76%;
+  }
 }
