@@ -62,22 +62,24 @@ $(function () {
 
 
   //햄버거메뉴
-  const line = $('.searchBox .mobile > div'); // 햄버거 줄 3개
-  const nav = $('.gnb'); // 전체 메뉴 박스
-  const sub = $('.gnb-draw'); // 펼쳐지는 서브 메뉴들
+  $(document).ready(function () {
+  const line = $('.searchBox .mobile > div');
+  const nav = $('.gnb');
+  const sub = $('.gnb-draw');
 
-
-  $('.searchBox .menu').click(function (e) {
-    e.preventDefault();
-    line.toggleClass('active')
-    nav.toggleClass('active')
-
+  $('.searchBox .mobile').on('click', function (e) {
+    e.preventDefault(); // a 태그 이동 막기
+    line.toggleClass('active');
+    nav.toggleClass('active');
   });
+
   $(window).on('resize', function () {
     line.removeClass('active');
     nav.removeClass('active');
     sub.slideUp();
   });
+});
+
 
 
   //section02 글자
