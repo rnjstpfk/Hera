@@ -80,6 +80,33 @@ $(function () {
   });
 });
 
+//+-토글
+$(document).ready(function () {
+  $('.depth1').on('click', function (e) {
+    e.preventDefault();
+
+    const $li = $(this).closest('li');
+    const $draw = $li.find('.gnb-draw');
+    const $icon = $(this).find('.icon');
+
+    if ($draw.is(':visible')) {
+      $draw.slideUp();
+      $icon.text('+');
+    } else {
+      // 다른 서브메뉴 모두 닫기
+      $('.gnb-draw').slideUp();
+      $('.icon').text('+');
+
+      // 현재 서브메뉴 열기
+      $draw.slideDown();
+      $icon.text('-');
+    }
+  });
+});
+
+
+
+
 
 
   //section02 글자

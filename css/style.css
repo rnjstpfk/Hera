@@ -1089,6 +1089,12 @@ footer.footer {
 
 
 
+@media screen and (max-width: 1060px) and (min-width: 800px) {
+  .txtRight {
+    top: 48%;   /* 원하는 값으로 수정해줘 */
+    left: 65%;  /* 원하는 값으로 수정해줘 */
+  }
+}
 
 
 
@@ -1255,6 +1261,11 @@ footer.footer {
   }
 
 
+.gnb-draw {
+  display: none;     /* 자바스크립트로 열고 닫기 할 거니까 이렇게만 설정 */
+  padding: 10px 0;   /* 안쪽 여백 좀 줘서 안에 내용 보여지게! */
+  background: rgba(0, 0, 0, 0.1); /* 서브 메뉴 배경 테스트용 */
+}
 
 
 
@@ -1289,10 +1300,10 @@ footer.footer {
 
 /* 메뉴 아이템 */
 .headerBottomNav nav .gnb-menu > li {
-  width: 1120px;
+  width: 210%;
   text-align: left;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* 메뉴 링크 */
@@ -1315,10 +1326,10 @@ footer.footer {
   padding-left: 20px;
 }
 
-.headerBottomNav nav .gnb-menu > li:hover > ul {
+/* .headerBottomNav nav .gnb-menu > li:hover > ul {
   display: block;
 }
-
+ */
 /* 서브 메뉴 항목 */
 .headerBottomNav nav .gnb-menu > li > ul > li {
   height: 45px;
@@ -1336,9 +1347,18 @@ footer.footer {
 }
 
 /* 아이콘 위치 */
-.headerBottomNav nav .gnb-menu > li > a > .icon {
+.gnb-menu > li > a {
   position: relative;
-  top: 15px;
+  padding-right: 30px;
+}
+
+.gnb-menu > li > a .icon {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #fff;
 }
 
 
